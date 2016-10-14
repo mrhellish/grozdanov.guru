@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>No Image Lab | Martin Grozdanov</title>
+        <link href="../../css/bootstrap.slate.min.css" rel="stylesheet">
+        <link href="../../css/custom.css" rel="stylesheet">
+        <style>
+            .row.imageWrapper {
+                position: relative;
+                overflow: hidden;
+            }
+            .imageWrapper canvas {
+                width: 100%;
+                height: 100%;
+            }
+            .imageWrapper canvas.foreground {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+
+            #noimage1_2 {
+                width: auto;
+                margin: auto;
+                opacity: 0.05;
+            }
+
+            #noimage2_2 {
+                opacity: 0.2;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>No Image</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row imageWrapper" title="Awesome Smiley">
+                        <canvas id="noimage1"></canvas>
+                        <canvas id="noimage1_2" class="foreground"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../js/jquery-3.1.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="noimage1.js"></script>
+        <script src="js.js"></script>
+    </body>
+</html>
